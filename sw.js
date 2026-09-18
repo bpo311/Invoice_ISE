@@ -1,6 +1,6 @@
 /* ISE Invoices service worker — app-shell precache, cache-first, versioned.
    Scope-relative so the app works at any base path (root or /Invoice_ISE/). */
-const VERSION = "ise-90e9e711b66d"; // stamped with a build hash by scripts/stamp-sw.mjs
+const VERSION = "ise-90e9e711b66d-v3"; // stamped with a build hash by scripts/stamp-sw.mjs
 const BASE = new URL(self.registration.scope).pathname; // e.g. "/" or "/Invoice_ISE/"
 const abs = (p) => BASE + p;
 
@@ -8,7 +8,7 @@ const abs = (p) => BASE + p;
 // Precaching ALL of them (including the lazy pdfmake chunk) at install makes
 // each deploy atomic: a cached shell always has every file it references, so
 // PDF generation can never 404/hang after a redeploy or offline.
-const BUILD_ASSETS = ["assets/index-Cl0Y-Ddv.css", "assets/index-DkwStWkE.js", "assets/ise-logo-B1Sj9nKB.svg", "assets/pdfmake-Cx9scTbD.js", "assets/rolldown-runtime-hePW80VL.js"];
+const BUILD_ASSETS = ["assets/index-Cl0Y-Ddv2.css", "assets/index-DkwStWkE2.js", "assets/ise-logo-B1Sj9nKB.svg", "assets/pdfmake-Cx9scTbD.js", "assets/rolldown-runtime-hePW80VL.js"];
 
 const SHELL = [
   "",
