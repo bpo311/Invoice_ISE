@@ -1,6 +1,6 @@
 /* ISE Invoices service worker — app-shell precache, cache-first, versioned.
    Scope-relative so the app works at any base path (root or /Invoice_ISE/). */
-const VERSION = "ise-90e9e711b66d-v4"; // stamped with a build hash by scripts/stamp-sw.mjs
+const VERSION = "ise-90e9e711b66d-v5"; // stamped with a build hash by scripts/stamp-sw.mjs
 const BASE = new URL(self.registration.scope).pathname; // e.g. "/" or "/Invoice_ISE/"
 const abs = (p) => BASE + p;
 
