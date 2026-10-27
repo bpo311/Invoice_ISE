@@ -1,0 +1,8 @@
+{
+  "appId": "com.ise.invoices",
+  "appName": "ISE Invoices",
+  "webDir": "dist",
+  "ios": {
+    "contentInset": "automatic"
+  }
+}

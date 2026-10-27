@@ -1,0 +1,30 @@
+{
+  "name": "ise-invoices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "node copy-web.mjs && npx cap copy ios",
+    "sync": "node copy-web.mjs && npx cap sync ios",
+    "open": "npx cap open ios"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpo311/Invoice_ISE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bpo311/Invoice_ISE/issues"
+  },
+  "homepage": "https://github.com/bpo311/Invoice_ISE#readme",
+  "dependencies": {
+    "@capacitor/cli": "^8.5.3",
+    "@capacitor/core": "^8.5.3",
+    "@capacitor/ios": "^8.5.3"
+  },
+  "private": "true"
+}
